@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<h3>Example:</h3>
+
+<h3>Output:</h3>
+	<script>
+		String.prototype.truncate = function(len, trailingStr) {
+		    if (!trailingStr) { trailingStr = ''; }
+		    return (this.length > len) ? this.substr(0,len) + trailingStr : this;
+		}
+
+		document.write('This is a really long string that has been truncated to ten characters'.truncate(10,'&#133;'));
+	</script>
+</body>
+</html> 
